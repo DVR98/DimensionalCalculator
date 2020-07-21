@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="DimensionalCalculator.Homepage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DimensionalCalculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="564" Width="708">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,252,0,0" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,252,0,0" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,252,0,0" Click="btn9_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,321,0,0" Click="btn6_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,321,0,0" Click="btn5_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,321,0,0" Click="btn4_Click"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,390,0,0" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,390,0,0" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,390,0,0" Click="btn3_Click"/>
+        <TextBox x:Name="edtOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="92" Width="461" Margin="123,70,0,0"/>
+        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="286,462,0,0" Click="btnEqual_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="203,462,0,0" Click="btn0_Click"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,462,0,0" Width="29" Click="btnClear_Click"/>
+        <Button x:Name="btnMultiply" Content="x" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,252,0,0" Click="btnMultiply_Click" Width="29"/>
+        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,321,0,0" Width="29" Click="btnDivide_Click"/>
+        <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,390,0,0" Width="29" Click="btnPlus_Click"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="356,462,0,0" Width="29" Click="btnMinus_Click"/>
+        <Button x:Name="btnInterest" Content="InterestPage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,294,0,0" Click="btnInterest_Click" Width="139"/>
+        <Button x:Name="btnArray20" Content="BubbleSort" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,331,0,0" Width="139" Click="btnArray20_Click"/>
+        <Button x:Name="btnMassPage" Content="MassPage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,368,0,0" Width="139" Click="btnMassPage_Click"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Other pages:" VerticalAlignment="Top" Margin="478,252,0,0" Width="106"/>
+        <Button x:Name="btnExchangePage" Content="ExchangePage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,405,0,0" Width="139" Click="btnExchangePage_Click"/>
+        <Button x:Name="btnQuicksort" Content="QuicksortPage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="445,440,0,0" Width="139" Click="btnQuicksort_Click"/>
+        <TextBlock x:Name="redError" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="123,167,0,0" Height="32" Width="461" Foreground="Red"/>
+
+    </Grid>
+</Page>

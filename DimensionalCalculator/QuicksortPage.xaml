@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="DimensionalCalculator.QuicksortPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DimensionalCalculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="448" Width="816">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="btnGenerate" Content="Generate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,137,0,0" Click="btnGenerate_Click"/>
+        <Button x:Name="btnSort" Content="Sort" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,100,0,0" Width="81" Click="btnSort_Click"/>
+        <TextBox x:Name="edtAUS" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="442" Width="365" IsReadOnly="True"/>
+        <TextBox x:Name="edtAS" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="456,0,0,0" Height="442" Width="354" IsReadOnly="True"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,174,0,0" Width="81" Click="btnClear_Click"/>
+        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,400,0,0" Width="81" Click="btnHome_Click"/>
+    </Grid>
+</Page>
