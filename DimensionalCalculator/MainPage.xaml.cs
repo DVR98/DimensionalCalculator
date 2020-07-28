@@ -30,36 +30,63 @@ namespace DimensionalCalculator
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
+            HasNavigated();
             mainpage_Frame.Navigate(typeof(Homepage));
         }
 
         private void hamburgerButton_Click(object sender, RoutedEventArgs e)
         {
+            IsNavigationOpen();
             menuSplitView.IsPaneOpen = !menuSplitView.IsPaneOpen;
         }
 
+        private void IsNavigationOpen()
+        {
+            if (menuSplitView.IsPaneOpen == true)
+            {
+                mainpage_Frame.IsEnabled = true;
+                mainpage_Frame.Opacity = 1;
+            }
+            else
+            {
+                mainpage_Frame.IsEnabled = false;
+                mainpage_Frame.Opacity = 0.2;
+            }
+        }
+
+        private void HasNavigated()
+        {
+            menuSplitView.IsPaneOpen = false;
+            mainpage_Frame.Opacity = 1;
+            mainpage_Frame.IsEnabled = true;
+        }
         private void Exchange_Click(object sender, RoutedEventArgs e)
         {
+            HasNavigated();
             mainpage_Frame.Navigate(typeof(ExchangePage));
         }
 
         private void Interest_Click(object sender, RoutedEventArgs e)
         {
+            HasNavigated();
             mainpage_Frame.Navigate(typeof(InterestPage));
         }
 
         private void Mass_Click(object sender, RoutedEventArgs e)
         {
+            HasNavigated();
             mainpage_Frame.Navigate(typeof(MassPage));
         }
 
         private void BubbleSort_Click(object sender, RoutedEventArgs e)
         {
+            HasNavigated();
             mainpage_Frame.Navigate(typeof(BubbleSort));
         }
 
         private void QuickSort_Click(object sender, RoutedEventArgs e)
         {
+            HasNavigated();
             mainpage_Frame.Navigate(typeof(QuicksortPage));
         }
     }

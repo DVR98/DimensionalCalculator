@@ -8,10 +8,16 @@
     mc:Ignorable="d" Height="auto" Width="auto">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="auto" Width="auto">
+        <Frame Name="mainpage_Frame" 
+               Height="auto"
+               Width="auto"
+               Margin="70 0 0 0"
+               >
+        </Frame>
         <SplitView x:Name="menuSplitView" 
                    DisplayMode="CompactInline" 
                    IsPaneOpen="False" 
-                   CompactPaneLength="65" 
+                   CompactPaneLength="70" 
                    OpenPaneLength="300"
                    Margin="0 0 0 0"
                    >
@@ -48,11 +54,5 @@
                 </StackPanel>
             </SplitView.Pane>
         </SplitView>
-        <Frame Name="mainpage_Frame" 
-               Height="auto"
-               Width="auto"
-               Margin="300 0 0 0"
-               >
-        </Frame>
     </Grid>
 </Page>
