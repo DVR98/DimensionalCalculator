@@ -383,21 +383,30 @@ namespace DimensionalCalculator
             this.InitializeComponent();
         }
 
-        public int Total = 0;
+        public float Total = 0;
         public string sign = "";
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            Button button = (Button)sender;
-            textBox.Text += button.Content;
+            if((float.TryParse(textBox.Text, out float value) == true) | ((textBox.Text.Contains(",") == true))) 
+            {
+                Button button = (Button)sender;
+                textBox.Text += button.Content;
+            }
+            else
+            {
+                textBox.Text = "";
+                Button button = (Button)sender;
+                textBox.Text += button.Content;
+            }
         }
 
         // The addition button
         private void plus_Click(object sender, RoutedEventArgs e)
         {
-            int number;
-            bool result = Int32.TryParse(textBox.Text, out number);
-            if (result)
+            float number;
+            bool result = float.TryParse(textBox.Text, out number);
+            if (result == true)
             {
                 Total = number;
                 sign = "+";
@@ -412,8 +421,8 @@ namespace DimensionalCalculator
         //The minus button
         private void minus_Click(object sender, RoutedEventArgs e)
         {
-            int number;
-            bool result = Int32.TryParse(textBox.Text, out number);
+            float number;
+            bool result = float.TryParse(textBox.Text, out number);
             if (result)
             {
                 Total = number;
@@ -429,8 +438,8 @@ namespace DimensionalCalculator
         // The multiply button
         private void mulitiply_Click(object sender, RoutedEventArgs e)
         {
-            int number;
-            bool result = Int32.TryParse(textBox.Text, out number);
+            float number;
+            bool result = float.TryParse(textBox.Text, out number);
             if (result)
             {
                 Total = number;
@@ -446,8 +455,8 @@ namespace DimensionalCalculator
         //The divide button
         private void divide_Click(object sender, RoutedEventArgs e)
         {
-            int number;
-            bool result = Int32.TryParse(textBox.Text, out number);
+            float number;
+            bool result = float.TryParse(textBox.Text, out number);
             if (result)
             {
                 Total = number;
@@ -463,8 +472,8 @@ namespace DimensionalCalculator
         // The calculate button
         private void equals_click(object sender, RoutedEventArgs e)
         {
-            int number;
-            bool result = Int32.TryParse(textBox.Text, out number);
+            float number;
+            bool result = float.TryParse(textBox.Text, out number);
             if (result)
             {
                 CalculateAnswer a = new CalculateAnswer(Total, number, sign);

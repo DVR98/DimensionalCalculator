@@ -8,18 +8,18 @@ namespace Models.CalculateAnswer
 {
     public class CalculateAnswer
     {
-        int total;
+        float total;
         string sign;
-        int number;
+        float number;
 
-        public CalculateAnswer(int Total, int Number, string Sign)
+        public CalculateAnswer(float Total, float Number, string Sign)
         {
             total = Total;
             number = Number;
             sign = Sign;
         }
 
-        public int Answer()
+        public float Answer()
         {
             if (sign == "+")
             {

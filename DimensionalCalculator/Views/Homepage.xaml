@@ -57,7 +57,7 @@
         <Grid Grid.Row="5" Background="WhiteSmoke" Grid.ColumnSpan="4"></Grid>
         <Grid Grid.Row="6" Background="WhiteSmoke" Grid.ColumnSpan="4"></Grid>
 
-        <TextBox Name="textBox"  Grid.Row="1" Grid.ColumnSpan="4" TabIndex="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" PlaceholderText="Enter Value" BorderBrush="Transparent" TextAlignment="Right" FontSize="36" Margin="0,0,0,0" IsReadOnly="True"/>
+        <TextBox Name="textBox"  Grid.Row="1" Grid.ColumnSpan="4" TabIndex="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" PlaceholderText="Enter Value" BorderBrush="Transparent" TextAlignment="Center" FontSize="48" Margin="0,0,0,0" IsReadOnly="True"/>
 
         <Button Click="plus_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="+" Background="Transparent" Foreground="Black" Margin="0,0,0,0" Grid.Column="0" Grid.Row="2" FontSize="60"></Button>
         <Button Click="minus_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="-" Background="Transparent" Foreground="Black" Margin="0,0,0,0" Grid.Column="1" Grid.Row="2" FontSize="60"></Button>
@@ -81,7 +81,7 @@
 
         <!--7th Row-->
         <Button Click="btn_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="0" Background="Transparent" Foreground="Black" Margin="0,0,0,0" Grid.Row="6" Grid.Column="0" FontSize="40"></Button>
-        <Button Click="btn_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="." Background="Transparent" Foreground="Black" Margin="0,0,0,0" Grid.Row="6" Grid.Column="1" FontSize="40"></Button>
+        <Button Click="btn_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="," Background="Transparent" Foreground="Black" Margin="0,0,0,0" Grid.Row="6" Grid.Column="1" FontSize="40"></Button>
         <Button Click="clear_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Content="Clear" Background="Transparent" Foreground="Black" Margin="0,0,0,0" Grid.Row="6" Grid.Column="2" FontSize="25"></Button>
     </Grid>
 </Page>
