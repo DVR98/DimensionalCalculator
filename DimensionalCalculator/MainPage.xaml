@@ -19,7 +19,7 @@
                 <StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Button Name="hamburgerButton" FontFamily="Segoe MDL2 Assets" Height="60" Width="70" Content="&#xE700;" Click="hamburgerButton_Click"></Button>
-                        <TextBlock Name="Hamburger_Label" FontSize="28" VerticalAlignment="Center" Margin="10 0 0 0">Pages:</TextBlock>
+                        <TextBlock Name="Hamburger_Label" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10 0 0 0">Pages:</TextBlock>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <AppBarButton Name="Home_Icon" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Icon="Page2" Label="Calculator" Click="Home_Click"></AppBarButton>
