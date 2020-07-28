@@ -25,6 +25,42 @@ namespace DimensionalCalculator
         public MainPage()
         {
             this.InitializeComponent();
+            mainpage_Frame.Navigate(typeof(Homepage));
+        }
+
+        private void Home_Click(object sender, RoutedEventArgs e)
+        {
+            mainpage_Frame.Navigate(typeof(Homepage));
+        }
+
+        private void hamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            menuSplitView.IsPaneOpen = !menuSplitView.IsPaneOpen;
+        }
+
+        private void Exchange_Click(object sender, RoutedEventArgs e)
+        {
+            mainpage_Frame.Navigate(typeof(ExchangePage));
+        }
+
+        private void Interest_Click(object sender, RoutedEventArgs e)
+        {
+            mainpage_Frame.Navigate(typeof(InterestPage));
+        }
+
+        private void Mass_Click(object sender, RoutedEventArgs e)
+        {
+            mainpage_Frame.Navigate(typeof(MassPage));
+        }
+
+        private void BubbleSort_Click(object sender, RoutedEventArgs e)
+        {
+            mainpage_Frame.Navigate(typeof(BubbleSort));
+        }
+
+        private void QuickSort_Click(object sender, RoutedEventArgs e)
+        {
+            mainpage_Frame.Navigate(typeof(QuicksortPage));
         }
     }
 }

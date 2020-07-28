@@ -5,7 +5,55 @@
     xmlns:local="using:DimensionalCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="544" Width="638">
+    mc:Ignorable="d" Height="auto" Width="auto">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="auto" Width="auto">
+        <SplitView x:Name="menuSplitView" 
+                   DisplayMode="CompactOverlay" 
+                   IsPaneOpen="False" 
+                   CompactPaneLength="50" 
+                   OpenPaneLength="300"
+                   Margin="0 0 0 0"                   
+                   >
+            <SplitView.Pane>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Name="hamburgerButton" FontFamily="Segoe MDL2 Assets" Height="50" Width="50" Content="&#xE700;" Click="hamburgerButton_Click"></Button>
+                        <TextBlock Name="Hamburger_Label" FontSize="28" VerticalAlignment="Center" Margin="10 0 0 0">Pages:</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <AppBarButton Name="Home_Icon" Height="55" Width="50" Icon="Page2" Label="Mass" Click="Home_Click"></AppBarButton>
+                        <TextBlock Name="Home_Label" Margin="10 0 0 0" FontSize="30" VerticalAlignment="Center" PointerPressed="Home_Click">Home</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <AppBarButton Name="Exchange_Icon" Height="55" Width="50" Icon="Page2" Label="Exchange" Click="Exchange_Click"></AppBarButton>
+                        <TextBlock Name="Exchange_Label" Margin="10 0 0 0" FontSize="28" VerticalAlignment="Center" PointerPressed="Exchange_Click">Exchange</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <AppBarButton Height="55" Width="50" Icon="Page2" Label="Interest" Click="Interest_Click"></AppBarButton>
+                        <TextBlock FontSize="28" Margin="10 0 0 0" VerticalAlignment="Center" PointerPressed="Interest_Click">Interests</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <AppBarButton Height="55" Width="50" Icon="Page2" Label="Bubble" Click="BubbleSort_Click"></AppBarButton>
+                        <TextBlock FontSize="28" Margin="10 0 0 0" VerticalAlignment="Center" PointerPressed="BubbleSort_Click">Bubble sort</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <AppBarButton Height="55" Width="50" Icon="Page2" Label="Quick" Click="QuickSort_Click"></AppBarButton>
+                        <TextBlock FontSize="28" Margin="10 0 0 0" VerticalAlignment="Center" PointerPressed="QuickSort_Click">Quick sort</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <AppBarButton Height="55" Width="50" Icon="Page2" Label="Mass" Click="Mass_Click"></AppBarButton>
+                        <TextBlock FontSize="30" Margin="10 0 0 0" VerticalAlignment="Center" PointerPressed="Mass_Click">Mass</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+        <Frame Name="mainpage_Frame" 
+               
+               Height="auto"
+               Width="auto"
+               Margin="50 0 0 0"
+               >
+        </Frame>
+    </Grid>
 </Page>

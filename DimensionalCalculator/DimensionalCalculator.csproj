@@ -95,28 +95,29 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BubbleSort.xaml.cs">
+    <Compile Include="Models\CalculateAnswer.cs" />
+    <Compile Include="Views\BubbleSort.xaml.cs">
       <DependentUpon>BubbleSort.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CExchange.cs" />
-    <Compile Include="CInterest.cs" />
-    <Compile Include="ExchangePage.xaml.cs">
+    <Compile Include="Models\CExchange.cs" />
+    <Compile Include="Models\CInterest.cs" />
+    <Compile Include="Views\ExchangePage.xaml.cs">
       <DependentUpon>ExchangePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Homepage.xaml.cs">
+    <Compile Include="Views\Homepage.xaml.cs">
       <DependentUpon>Homepage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InterestPage.xaml.cs">
+    <Compile Include="Views\InterestPage.xaml.cs">
       <DependentUpon>InterestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MassPage.xaml.cs">
+    <Compile Include="Views\MassPage.xaml.cs">
       <DependentUpon>MassPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuicksortPage.xaml.cs">
+    <Compile Include="Views\QuicksortPage.xaml.cs">
       <DependentUpon>QuicksortPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -142,19 +143,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BubbleSort.xaml">
+    <Page Include="Views\BubbleSort.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ExchangePage.xaml">
+    <Page Include="Views\ExchangePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Homepage.xaml">
+    <Page Include="Views\Homepage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="InterestPage.xaml">
+    <Page Include="Views\InterestPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -162,11 +163,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MassPage.xaml">
+    <Page Include="Views\MassPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="QuicksortPage.xaml">
+    <Page Include="Views\QuicksortPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +177,7 @@
       <Version>6.0.6</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

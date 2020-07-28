@@ -5,7 +5,7 @@
     xmlns:local="using:DimensionalCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="477.707" Width="570.064">
+    mc:Ignorable="d" Height="auto" Width="auto">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ComboBox x:Name="rgpInput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,70,0,0" SelectionChanged="rgpInput_SelectionChanged" />
@@ -13,7 +13,6 @@
 
         <ComboBox x:Name="rgpOutput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="208,70,0,0" SelectionChanged="rgpOutput_SelectionChanged" />
 
-        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnHome_Click" Margin="455,393,0,0" Width="71"/>
         <TextBox x:Name="edtOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="346,70,0,0" Height="288" Width="180"/>
         <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,198,0,0" Click="btn7_Click" Height="30" Width="38"/>
         <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,198,0,0" Click="btn8_Click" Height="30" Width="35"/>

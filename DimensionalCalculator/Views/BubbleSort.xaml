@@ -5,7 +5,7 @@
     xmlns:local="using:DimensionalCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="442" Width="816">
+    mc:Ignorable="d" Height="auto" Width="auto">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="btnGenerate" Content="Generate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,137,0,0" Click="btnGenerate_Click"/>
