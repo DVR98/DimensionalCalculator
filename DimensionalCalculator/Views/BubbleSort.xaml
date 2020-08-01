@@ -8,12 +8,94 @@
     mc:Ignorable="d" Height="auto" Width="auto">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="btnGenerate" Content="Generate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,137,0,0" Click="btnGenerate_Click"/>
-        <Button x:Name="btnSort" Content="Sort" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,100,0,0" Width="81" Click="btnSort_Click"/>
-        <TextBox x:Name="edtAUS" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="442" Width="365" IsReadOnly="True"/>
-        <TextBox x:Name="edtAS" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="456,0,0,0" Height="442" Width="354" IsReadOnly="True"/>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,174,0,0" Width="81" Click="btnClear_Click"/>
-        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,400,0,0" Width="81" Click="btnHome_Click"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <Button x:Name="btnGenerate"
+                Grid.Row="0"
+                Grid.Column="2"
+                Grid.RowSpan="2"
+                Content="Generate values" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch" 
+                Click="btnGenerate_Click"
+                FontSize="36"
+                />
+        <Button x:Name="btnSort" 
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.RowSpan="2"
+                Content="Sort values" 
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                Click="btnSort_Click"
+                FontSize="36"
+                />
+        <Button x:Name="btnClear"
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.RowSpan="2"
+                Content="Clear" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch" 
+                Click="btnClear_Click"
+                FontSize="36"
+                />
+        <TextBlock
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Text="Unsorted Values"
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            FontSize="48"
+            TextAlignment="Center"
+            />
+        <TextBox x:Name="edtAUS"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 Grid.RowSpan="6"
+                 Grid.ColumnSpan="2"
+                 HorizontalAlignment="Stretch" 
+                 TextWrapping="Wrap" 
+                 Text="" 
+                 VerticalAlignment="Stretch"
+                 IsReadOnly="True"
+                 />
+        <TextBlock
+            Grid.Row="0"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Text="Sorted Values"
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            FontSize="48"
+            TextAlignment="Center"
+            />
+        <TextBox 
+            x:Name="edtAS" 
+            Grid.Row="1"
+            Grid.Column="3"
+            Grid.RowSpan="6"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Stretch" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Stretch"
+            IsReadOnly="True"
+                 />
     </Grid>
 </Page>
