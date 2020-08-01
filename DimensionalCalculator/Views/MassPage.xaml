@@ -5,35 +5,213 @@
     xmlns:local="using:DimensionalCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="483" Width="587">
+    mc:Ignorable="d" Height="auto" Width="auto">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <FlyoutBase.AttachedFlyout>
-            <MenuFlyout/>
-        </FlyoutBase.AttachedFlyout>
-        <ComboBox x:Name="rgpInput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,70,0,0" SelectionChanged="rgpInput_SelectionChanged" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <ComboBox 
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="0"
+            x:Name="rgpInput" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            SelectionChanged="rgpInput_SelectionChanged" 
+            />
 
+        <ComboBox 
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="2"
+            x:Name="rgpOutput" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            SelectionChanged="rgpOutput_SelectionChanged" 
+            />
 
-        <ComboBox x:Name="rgpOutput" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,70,0,0" SelectionChanged="rgpOutput_SelectionChanged" />
+        <TextBox 
+            Grid.Row="0"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="6"
+            x:Name="edtOutput" 
+            HorizontalAlignment="Stretch"
+            TextWrapping="Wrap"
+            Text="" 
+            VerticalAlignment="Stretch"
+            />
+        
+        <Button 
+            Grid.Row="3"
+            x:Name="btn7" 
+            Content="7" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn7_Click" 
+            />
+        
+        <Button 
+            Grid.Row="3"
+            Grid.Column="1"
+            x:Name="btn8" 
+            Content="8" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn8_Click" 
+            />
+        
+        <Button 
+            Grid.Row="3"
+            Grid.Column="2"
+            x:Name="btn9" 
+            Content="9" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn9_Click" 
+            />
+        
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            x:Name="btn6" 
+            Content="6" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btn6_Click"
+            />
+        
+        <Button 
+            Grid.Row="4"
+            Grid.Column="1"
+            x:Name="btn5" 
+            Content="5" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btn5_Click" 
+            />
+        
+        <Button
+            Grid.Row="4"
+            x:Name="btn4"
+            Content="4" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn4_Click" 
+            />
+        
+        <Button 
+            Grid.Row="5"
+            x:Name="btn1" 
+            Content="1" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn1_Click" 
+            />
+        
+        <Button 
+            Grid.Row="5"
+            Grid.Column="1"
+            x:Name="btn2" 
+            Content="2" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn2_Click" 
+            />
+        
+        <Button 
+            Grid.Row="5"
+            Grid.Column="2"
+            x:Name="btn3" 
+            Content="3" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn3_Click" 
+            />
+        
+        <Button 
+            Grid.Row="6"
+            x:Name="btn0" 
+            Content="0" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn0_Click" 
+            />
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="1"
+            x:Name="btnClear" 
+            Content="Clear" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btnClear_Click" 
+            />
+        
+        <TextBlock 
+            HorizontalAlignment="Stretch"
+            TextWrapping="Wrap"
+            FontSize="38"
+            TextAlignment="Center"
+            Text="Input mass:" 
+            VerticalAlignment="Stretch" 
+            />
+        
+        <TextBlock 
+            FontSize="38"
+            Grid.Row="0"
+            Grid.Column="2"
+            HorizontalAlignment="Stretch" 
+            TextWrapping="Wrap"
+            Text="Output mass:" 
+            VerticalAlignment="Stretch"
+            />
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="2"
+            x:Name="btnConvert" 
+            Content="Convert"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" 
+            Click="btnConvert_Click"
+            />
+        
+        <Button 
+            Grid.Row="2"
+            Grid.Column="1"
+            x:Name="btnStart" 
+            Content="Start" 
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Click="btnStart_Click"
+            />
 
-        <Button x:Name="btnHome" Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnHome_Click" Margin="455,393,0,0" Width="71"/>
-        <TextBox x:Name="edtOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="346,70,0,0" Height="288" Width="180"/>
-        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,198,0,0" Click="btn7_Click" Height="30" Width="38"/>
-        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,198,0,0" Click="btn8_Click" Height="30" Width="35"/>
-        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="257,198,0,0" Click="btn9_Click" Height="30" Width="36"/>
-        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="257,262,0,0" Click="btn6_Click" Height="30" Width="36"/>
-        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,262,0,0" Click="btn5_Click" Height="30" Width="35"/>
-        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,262,0,0" Click="btn4_Click" Height="30" Width="38"/>
-        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,328,0,0" Click="btn1_Click" Height="30" Width="38"/>
-        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,328,0,0" Click="btn2_Click" Height="30" Width="35"/>
-        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="257,328,0,0" Click="btn3_Click" Height="30" Width="36"/>
-        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="257,395,0,0" Click="btn0_Click" Height="30" Width="35"/>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,395,0,0" Width="139" Click="btnClear_Click" Height="30"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Input mass:" VerticalAlignment="Top" Margin="34,41,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Output mass:" VerticalAlignment="Top" Margin="208,45,0,0"/>
-        <Button x:Name="btnConvert" Content="Convert" HorizontalAlignment="Left" Margin="46,136,0,0" VerticalAlignment="Top" Width="250" Click="btnConvert_Click"/>
-        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="346,393,0,0" Click="btnStart_Click"/>
-        <TextBlock x:Name="redError" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="346,41,0,0" Width="180" Foreground="Red"/>
-
+        <TextBlock 
+            Grid.Row="6"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            x:Name="redError" 
+            HorizontalAlignment="Stretch"
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Stretch" 
+            Foreground="Red"
+            />
     </Grid>
 </Page>

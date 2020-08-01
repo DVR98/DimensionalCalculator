@@ -173,7 +173,7 @@
             HorizontalAlignment="Stretch" 
             TextWrapping="Wrap" 
             TextAlignment="Center"
-            FontSize="36"
+            FontSize="38"
             Text="Input exchange:" 
             VerticalAlignment="Stretch" 
             />
@@ -181,7 +181,7 @@
         <TextBlock 
             Grid.Row="0"
             Grid.Column="2"
-            FontSize="36"
+            FontSize="38"
             TextAlignment="Center"
             HorizontalAlignment="Stretch" 
             TextWrapping="Wrap" 
