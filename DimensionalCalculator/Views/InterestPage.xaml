@@ -5,32 +5,248 @@
     xmlns:local="using:DimensionalCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="556" Width="612">
+    mc:Ignorable="d" Height="auto" Width="auto">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <FlyoutBase.AttachedFlyout>
-            <MenuFlyout/>
-        </FlyoutBase.AttachedFlyout>
-        <TextBox x:Name="edtOutput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="114" Width="425" Margin="96,44,0,0"/>
-        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,252,0,0" Click="btn7_Click" Width="33"/>
-        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,252,0,0" Click="btn8_Click" Width="33"/>
-        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,252,0,0" Click="btn9_Click" Width="33"/>
-        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,321,0,0" Click="btn6_Click" Width="33"/>
-        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,321,0,0" Click="btn5_Click" Width="33"/>
-        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,321,0,0" Click="btn4_Click" Width="33"/>
-        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,390,0,0" Click="btn1_Click" Width="33"/>
-        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,390,0,0" Click="btn2_Click" Width="33"/>
-        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,390,0,0" Click="btn3_Click" Width="33"/>
-        <Button x:Name="btnEqual" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="282,462,0,0" Click="btnEqual_Click" Width="35"/>
-        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="187,462,0,0" Click="btn0_Click" Width="33"/>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="96,462,0,0" Width="33" Click="btnClear_Click"/>
-        <RadioButton x:Name="rbSimple" Content="SImple interest" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,246,0,0" Checked="rbSimple_Checked"/>
-        <RadioButton x:Name="rbCompound" Content="Compound interest" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,215,0,0" Checked="rbCompound_Checked"/>
-        <Button x:Name="btnStartAmount" Content="Start ammount" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,299,0,0" Width="157" Click="btnStartAmount_Click"/>
-        <Button x:Name="btnInterest" Content="Interest %" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,336,0,0" Width="157" Click="btnInterest_Click"/>
-        <Button x:Name="btnYears" Content="Years" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,373,0,0" Width="157" Click="btnYears_Click"/>
-        <Button x:Name="btnExchange" Content="Home page" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="364,462,0,0" Width="157" Click="btnExchange_Click"/>
-        <TextBlock x:Name="redError" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="96,163,0,0" Width="425" Foreground="Red"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <TextBox 
+            IsReadOnly="True"
+            Grid.Row="0"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="6"
+            x:Name="edtOutput" 
+            HorizontalAlignment="Stretch" 
+            TextWrapping="Wrap" Text="" 
+            VerticalAlignment="Stretch" 
+            />
+        
+        <Button
+            Grid.Row="3"
+            x:Name="btn7" 
+            Content="7" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btn7_Click" 
+            />
+        
+        <Button 
+            Grid.Row="3"
+            Grid.Column="1"
+            x:Name="btn8" 
+            Content="8" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"  
+            Click="btn8_Click" 
+            />
+        
+        <Button 
+            Grid.Row="3"
+            Grid.Column="2"
+            x:Name="btn9" 
+            Content="9" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn9_Click"
+            />
+        
+        <Button 
+            Grid.Row="4"
+            Grid.Column="2"
+            x:Name="btn6" 
+            Content="6" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn6_Click" 
+            />
+        
+        <Button 
+            Grid.Row="4"
+            Grid.Column="1"
+            x:Name="btn5" 
+            Content="5" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn5_Click" 
+            />
+        
+        <Button 
+            Grid.Row="4"
+            x:Name="btn4" 
+            Content="4" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn4_Click" 
+            />
+        
+        <Button 
+            Grid.Row="5"
+            x:Name="btn1" 
+            Content="1" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btn1_Click" 
+            />
+        
+        <Button 
+            Grid.Row="5"
+            Grid.Column="1"
+            x:Name="btn2" 
+            Content="2" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn2_Click" 
+            />
+        
+        <Button 
+            Grid.Row="5"
+            Grid.Column="2"
+            x:Name="btn3" 
+            Content="3" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn3_Click" 
+            />
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="2"
+            x:Name="btnEqual" 
+            Content="=" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btnEqual_Click"
+            />
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="0"
+            x:Name="btn0" 
+            Content="0" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Click="btn0_Click"
+            />
+        
+        <Button 
+            Grid.Row="6"
+            Grid.Column="1"
+            x:Name="btnClear" 
+            Content="Clear" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btnClear_Click"
+            />
+        <TextBlock
+            FontSize="36"
+            TextAlignment="Center"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >Interest type:</TextBlock>
+
+        <TextBlock
+            Grid.Column="1"
+            FontSize="36"
+            TextAlignment="Center"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >1st:</TextBlock>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="1"
+            FontSize="36"
+            TextAlignment="Center"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >2nd:</TextBlock>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="2"
+            FontSize="36"
+            TextAlignment="Center"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >3rd:</TextBlock>
+        
+        <RadioButton 
+            Grid.Row="1"
+            Height="50"
+            Width="150"
+            x:Name="rbSimple" 
+            Content="Simple interest" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Checked="rbSimple_Checked"
+            />
+        
+        <RadioButton 
+            Grid.Row="2"
+            Height="50"
+            Width="150"
+            x:Name="rbCompound" 
+            Content="Compound interest" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Checked="rbCompound_Checked"
+            />
+        
+        <Button 
+            Grid.Row="0"
+            Grid.Column="2"
+            x:Name="btnStartAmount"
+            Content="Start ammount" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btnStartAmount_Click"
+            />
+        
+        <Button 
+            Grid.Row="1"
+            Grid.Column="2"
+            x:Name="btnInterest" 
+            Content="Interest %" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btnInterest_Click"
+            />
+
+        <Button 
+            Grid.Row="2"
+            Grid.Column="2"
+            x:Name="btnYears" 
+            Content="Years" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            Click="btnYears_Click"
+            />
+
+        <TextBlock 
+            Grid.Row="6"
+            Grid.ColumnSpan="2"
+            Grid.Column="3"
+            x:Name="redError" 
+            HorizontalAlignment="Stretch" 
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Stretch"
+            Foreground="Red"
+            />
+       
     </Grid>
 </Page>
