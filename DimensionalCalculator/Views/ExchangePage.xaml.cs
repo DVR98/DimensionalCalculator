@@ -79,7 +79,7 @@ namespace DimensionalCalculator
         public bool Option2 = false;
 
         public double input, output;
-        string Input, Output;
+        string Input;
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
         {
