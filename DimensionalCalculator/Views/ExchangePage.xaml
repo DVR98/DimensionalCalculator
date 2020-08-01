@@ -48,7 +48,7 @@
             Grid.Row="0"
             Grid.Column="3"
             Grid.ColumnSpan="2"
-            Grid.RowSpan="6"
+            Grid.RowSpan="5"
             x:Name="edtOutput" 
             HorizontalAlignment="Stretch" 
             TextWrapping="Wrap" 
@@ -207,13 +207,14 @@
             Click="btnStart_Click"/>
         
         <TextBlock 
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
             x:Name="redError" 
-            HorizontalAlignment="Left" 
+            HorizontalAlignment="Stretch" 
             TextWrapping="Wrap" 
             Text="" 
-            VerticalAlignment="Top" 
-            Margin="346,49,0,0" 
-            Width="180" 
+            VerticalAlignment="Stretch" 
             Foreground="Red"/>
 
     </Grid>
